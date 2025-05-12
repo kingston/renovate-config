@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Only update dependencies if vulnerabilities have been detected.",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "enabled": false,
+      "matchPackageNames": ["*"]
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "5.7.3"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["@eslint/js", "eslint"],
+      "allowedVersions": "9.25.1",
+      "groupName": "lint"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["prettier"],
+      "allowedVersions": "3.5.3",
+      "groupName": "lint"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "osvVulnerabilityAlerts": true,
+  "postUpdateOptions": ["pnpmDedupe"]
+}
