@@ -14,7 +14,7 @@
     },
     {
       "enabled": true,
-      "matchPackageNames": ["@eslint/js", "eslint"],
+      "matchPackageNames": ["eslint"],
       "allowedVersions": "9.25.1",
       "groupName": "lint"
     },
@@ -29,6 +29,23 @@
       "matchPackageNames": ["vitest"],
       "allowedVersions": "3.1.2",
       "groupName": "test"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["@ktam/lint-node"],
+      "allowedVersions": "0.4.0",
+      "groupName": "lint"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["@ktam/lint-react"],
+      "allowedVersions": "0.4.0",
+      "groupName": "lint"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "22.15.3"
     }
   ],
   "vulnerabilityAlerts": {
