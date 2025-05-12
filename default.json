@@ -46,6 +46,16 @@
       "enabled": true,
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "22.15.3"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["node"],
+      "allowedVersions": "22.14.0"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["pnpm"],
+      "allowedVersions": "10.6.5"
     }
   ],
   "vulnerabilityAlerts": {
