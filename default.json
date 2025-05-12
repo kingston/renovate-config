@@ -23,6 +23,12 @@
       "matchPackageNames": ["prettier"],
       "allowedVersions": "3.5.3",
       "groupName": "lint"
+    },
+    {
+      "enabled": true,
+      "matchPackageNames": ["vitest"],
+      "allowedVersions": "3.1.2",
+      "groupName": "test"
     }
   ],
   "vulnerabilityAlerts": {
